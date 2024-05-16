@@ -1,0 +1,68 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "bingoengine",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "fs": {
+        "all": true, 
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Bingo Engine",
+        "width": 1280,
+        "maxWidth": 1280,
+        "minWidth" : 800,
+        "height": 720,
+        "maxHeight": 720,
+        "minHeight" : 600
+
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.bingoengine.dev",
+      "icon": [
+        "icons/BingoEngineLogo.png",
+        "icons/BingoEngineLogo.png",
+        "icons/BingoEngineLogo.png",
+        "icons/icon.icon.icns",
+        "icons/icon.ico"
+      ] 
+    }
+  }
+}
