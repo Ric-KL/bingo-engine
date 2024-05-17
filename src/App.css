@@ -57,7 +57,9 @@
 .options-container {
   display: flex;
   width: 100%;
-  height: 100%
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .bingo-board-container {
@@ -88,6 +90,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-wrap: wrap;
+  word-break: break-word;
+  text-align: center;
+  flex-grow: 0;
+  user-select: none;
+  line-height: 16px;
+  font-size: 2vh;
 }
 
 .reset-generate-options {
@@ -110,6 +119,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .generate-sheet-button {
@@ -120,11 +130,23 @@
   height: 40px;
   width: 120px;
   background-color: white;
+  user-select: none;
 }
 
 .file-selector-button {
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  width: 100%;
+  height: 40px;
+  text-overflow: ellipsis;
+  text-wrap: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.folder-icon {
+  width: 40px;
+  height: 40px;
 }

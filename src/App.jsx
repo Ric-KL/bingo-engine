@@ -165,9 +165,9 @@ function App() {
         <div className="options-container bounds">
 
         </div>
-        <div className="options-container bounds">
+        <div className="options-container">
           <div className="file-selector-button" onClick={readFileContents}>
-            <h2>{`Selected: ${fileName == "" ? "Select File" : fileName}`}</h2>
+            <div className="folder-icon"></div><h2>{`Selected: ${fileName == "" ? "Select File" : fileName}`}</h2>
           </div>
         </div>
         <div className="options-container reset-generate-options">
